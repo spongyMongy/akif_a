@@ -85,10 +85,8 @@ services:
     env_file:
       - .env
     environment:
-      - AWS_ACCESS_KEY_ID=AKIAWVYAONN4BQPFDYUS
-      - AWS_SECRET_ACCESS_KEY=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
-      #      - AWS_ACCESS_KEY_ID= #PUT CREDS here or delete this and put into .env file
-      #      - AWS_SECRET_ACCESS_KEY= #PUT CREDS here or delete this and put into .env file
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
       - DB_HOST=db
       - DB_PORT=5433
       - DB_USER=postgres
